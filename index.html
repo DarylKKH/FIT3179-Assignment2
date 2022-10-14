@@ -8,24 +8,48 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
-    <!-- Title for the web page -->
-    <title>FIT3179 W10 Homework</title>
-
     <!-- CSS file -->
     <link rel="stylesheet" href="css/styles.css">
 
+    <!-- Title for the web page -->
+    <title>FIT3179 Assignment 2</title>
+
 </head>
 
-<body>
+<body style="background-color:honeydew;">
 
-    <h1 id="c-align">FIT3179 Week 10 Homework</h1>
-    <h2 id="c-align">A data visualisation on CO2 Emissions in the World</h2>
+    <h1 id="c-align">CO2 Emissions Around the World</h1>
 
-    <p id="c-align">Daryl Khoo Kah Hui</p>
-    <p id="c-align">32023065</p>
+    <div id="c-align">
+        <div id="choropleth_map"></div>
+        <p>-</p>
+        <p>The choropleth map above displays the <strong>CO2 EMISSIONS AROUND THE WORLD</strong>.</p>
+        <p>Data for several countries are not available, hence, it's area is highlighted <b>grey</b>.</p>
+        <p>Based on the map, we can draw that <strong>MAJORITY</strong> of the countries produce less than 
+            <strong>10,000 KG</strong> of CO2 Emission in the year <strong>2019</strong>.</p>
+    </div>
 
-    <div id="choropleth_map"></div>
-    <div id="bar_chart"></div>
+    <div id="divider"></div>
+
+    <div id="c-align">
+        <div id="bar_chart"></div>
+        <p>-</p>
+        <p>The bar chart shown above represents the CO2 emissions from China and United States between the year
+            <strong>2008</strong> and <strong>2017</strong>.</p>
+        <p>A filter is available to choose either a country of preference or both.</p>
+        <p>In year <strong>2014</strong>, China and United States produced more than <strong>14 BILLION</strong> CO2 emissions, 
+            indicating the highest amount among the 10 years.</p>
+    </div>
+
+    <div id="divider"></div>
+
+    <div id="c-align">
+        <div id="lollipop_chart"></div>
+        <p>-</p>
+        <p>The bar chart portrays the <strong>TOP 100</strong> countries with the <strong>HIGHEST</strong> cumulative amount of CO2 emissions.</p>
+        <p><b>CHINA</b> produced the most CO2 emissions, valueing up to <strong>140 BILLION</strong>, whereas 
+            <b>PANAMA</b> produced the least CO2 emissions, which is around <strong>160 MILLION</strong>.</p>
+    </div>
 
     <script>
 
@@ -38,6 +62,12 @@
         var chart_2 = "js/bar_chart.vg.json";
 
         vegaEmbed("#bar_chart", chart_2).then(function(result){
+            // Access the Vega view instance
+        }).catch(console.error);
+
+        var chart_3 = "js/lollipop_chart.vg.json";
+
+        vegaEmbed("#lollipop_chart", chart_3).then(function(result){
             // Access the Vega view instance
         }).catch(console.error);
 
