@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Top 100 countries with the Most CO2 Emission Production (1997-2017)",
+    "width": 500,
+    "height": 800,
+    "data": {
+      "url": "https://raw.githubusercontent.com/DarylKKH/FIT3179-Assignment2/main/data/Cumulative%20CO2%20Emissions%20of%20Top%20100%20Countries.csv"
+    },
+    "layer": [
+      {
+        "description": "The lollipop sticks",
+        "mark": {
+            "type": "bar", 
+            "tooltip": true
+        },
+        "encoding": {
+          "x": {
+            "field": "Cumulative CO2 Emissions (tonnes)",
+            "type": "quantitative",
+            "scale": {"type": "sqrt"}
+        },
+          "y": {
+            "field": "Country", 
+            "type": "nominal",
+            "sort": "-x"
+        },
+          "color": {"value": "#0000ff"},
+          "size": {"value": 5}
+        }
+      }
+    ]
+  }
