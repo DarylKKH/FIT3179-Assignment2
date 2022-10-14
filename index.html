@@ -51,6 +51,16 @@
             <b>PANAMA</b> produced the least CO2 emissions, which is around <strong>160 MILLION</strong>.</p>
     </div>
 
+    <div id="divider"></div>
+
+    <div id="c-align">
+        <div id="bubble_chart"></div>
+        <p>-</p>
+        <p>The bubble chart showns the relationship between <strong>CO2 EMISSIONS</strong> and the <strong>COUNTRY'S POPULATION</strong>.</p>
+        <p>It can be seen that as the <strong>POPULATION</strong> of a country <strong>INCREASES</strong>, 
+            the <strong>CO2 EMISSION</strong> also <strong>INCREASES</strong>.</p>
+    </div>
+
     <script>
 
         var chart_1 = "js/empty_data_map.vg.json";
@@ -68,6 +78,12 @@
         var chart_3 = "js/lollipop_chart.vg.json";
 
         vegaEmbed("#lollipop_chart", chart_3).then(function(result){
+            // Access the Vega view instance
+        }).catch(console.error);
+
+        var chart_4 = "js/bubble_chart.vg.json";
+
+        vegaEmbed("#bubble_chart", chart_4).then(function(result){
             // Access the Vega view instance
         }).catch(console.error);
 
