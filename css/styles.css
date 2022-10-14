@@ -27,6 +27,14 @@
     right: 50px;
 }
 
+/* Alignment of bubble chart */
+#bubble_chart {
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+}
+
 /* Section divider */
 #divider {
     margin: auto;
