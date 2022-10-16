@@ -1,4 +1,4 @@
-Country,Continent,Population,CO2  Emission (metric ton)
+Country,Continent,Population,CO2 Emissions (metric ton)
 Afghanistan,Asia,38051,9.39
 Albania,Europe,2880,4.03
 Algeria,Africa,43030,145.99
@@ -7,18 +7,18 @@ Angola,Africa,31850,17.64
 Antigua and Barbuda,North America,97,0.73
 Argentina,South America,44833,191.36
 Armenia,Asia,2957,5.98
-Aruba,North America,106,1.20
+Aruba,North America,106,1.2
 Australia,Oceania,25408,410.87
 Austria,Europe,8885,63.84
 Azerbaijan,Asia,10041,33.29
 Bahrain,Asia,1484,39.01
 Bangladesh,Asia,163021,90.78
-Barbados,North America,287,1.70
+Barbados,North America,287,1.7
 Belarus,Europe,9450,56.52
 Belgium,Europe,11497,132.28
 Belize,North America,390,0.58
 Benin,Africa,11807,7.74
-Bermuda,North America,63,0.80
+Bermuda,North America,63,0.8
 Bhutan,Asia,763,0.97
 Bolivia,South America,11513,18.34
 Bosnia and Herzegovina,Europe,3304,17.27
@@ -30,7 +30,7 @@ Bulgaria,Europe,6970,41.54
 Burkina Faso,Africa,20333,4.39
 Burma,Asia,54067,32.97
 Burundi,Africa,11536,0.68
-Cabo Verde,Africa,550,1.00
+Cabo Verde,Africa,550,1
 Cambodia,Asia,16482,11.89
 Cameroon,Africa,25886,7.25
 Canada,North America,37601,613.09
@@ -38,17 +38,17 @@ Cayman Islands,North America,65,0.67
 Central African Republic,Africa,4752,0.28
 Chad,Africa,15956,1.72
 Chile,South America,18923,86.87
-China,Asia,1434512,10608.60
+China,Asia,1434512,10608.6
 Colombia,South America,50225,75.95
-Comoros,Africa,851,0.30
+Comoros,Africa,851,0.3
 Congo-Brazzaville,Africa,5382,4.43
 Congo-Kinshasa,Africa,86841,2.64
 Costa Rica,North America,5046,7.92
 Croatia,Europe,4065,17.15
-Cuba,North America,11331,22.50
+Cuba,North America,11331,22.5
 Cyprus,Asia,888,8.23
 Czech Republic,Europe,10677,104.27
-Cote d'Ivoire,Africa,25731,10.80
+Cote d'Ivoire,Africa,25731,10.8
 Denmark,Europe,5817,36.12
 Djibouti,Africa,973,0.67
 Dominica,North America,72,0.19
@@ -59,7 +59,7 @@ El Salvador,North America,6454,7.05
 Equatorial Guinea,Africa,1356,4.67
 Eritrea,Africa,3506,0.74
 Estonia,Europe,1329,5.51
-Eswatini,Africa,1148,1.20
+Eswatini,Africa,1148,1.2
 Ethiopia,Africa,112109,14.06
 Fiji,Oceania,890,1.65
 Finland,Europe,5523,44.65
@@ -67,12 +67,12 @@ France,Europe,67267,341.98
 Gabon,Africa,2172,3.28
 Gambia,Africa,2349,0.59
 Georgia,Asia,3996,9.85
-Germany,Europe,83111,781.60
+Germany,Europe,83111,781.6
 Ghana,Africa,30422,17.63
 Greece,Europe,10721,73.67
 Greenland,North America,57,0.61
 Grenada,North America,112,0.32
-Guadeloupe,North America,400,1.90
+Guadeloupe,North America,400,1.9
 Guam,Oceania,167,1.83
 Guatemala,North America,17582,19.71
 Guinea,Africa,12778,2.98
@@ -84,7 +84,7 @@ Hong Kong,Asia,7444,97.45
 Hungary,Europe,9771,49.47
 Iceland,Europe,339,3.87
 India,Asia,1368140,2308.33
-Indonesia,Asia,270984,529.40
+Indonesia,Asia,270984,529.4
 Iran,Asia,82887,642.96
 Iraq,Asia,39310,154.66
 Ireland,Europe,4942,37.06
@@ -119,7 +119,7 @@ Mauritania,Africa,4529,3.88
 Mauritius,Africa,1269,6.94
 Mexico,North America,127746,456.15
 Moldova,Europe,3543,7.98
-Mongolia,Asia,3223,20.90
+Mongolia,Asia,3223,20.9
 Montenegro,Europe,628,2.52
 Morocco,Africa,36468,59.03
 Mozambique,Africa,30387,7.79
@@ -134,7 +134,7 @@ North Korea,Asia,25663,20.15
 North Macedonia,Europe,2083,6.54
 Norway,Europe,5353,38.06
 Oman,Asia,4618,75.87
-Pakistan,Asia,216564,192.90
+Pakistan,Asia,216564,192.9
 Palestinian Territories,Asia,4987,3.28
 Panama,North America,4245,26.79
 Papua New Guinea,Oceania,8777,6.32
@@ -160,7 +160,7 @@ Serbia,Europe,6945,47.04
 Seychelles,Africa,98,1.15
 Sierra Leone,Africa,7814,0.99
 Singapore,Asia,5696,244.06
-Slovakia,Europe,5455,34.50
+Slovakia,Europe,5455,34.5
 Slovenia,Europe,2096,14.25
 Solomon Islands,Oceania,670,0.34
 Somalia,Africa,15474,0.88
@@ -184,7 +184,7 @@ Togo,Africa,8085,2.26
 Tonga,Oceania,104,0.15
 Trinidad and Tobago,North America,1394,40.49
 Tunisia,Africa,11690,25.33
-Turkey,Asia,83525,397.80
+Turkey,Asia,83525,397.8
 Turkmenistan,Asia,5940,97.31
 U.S. Virgin Islands,North America,96,2.44
 Uganda,Africa,44216,5.87
@@ -198,5 +198,5 @@ Vanuatu,Oceania,300,0.23
 Venezuela,South America,28516,131.49
 Vietnam,Asia,96426,241.81
 Yemen,Asia,29162,8.29
-Zambia,Africa,17874,7.10
+Zambia,Africa,17874,7.1
 Zimbabwe,Africa,14654,8.96
