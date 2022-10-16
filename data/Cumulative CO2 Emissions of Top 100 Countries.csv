@@ -1,101 +1,101 @@
-Country,Cumulative CO2 Emissions (tonnes)
-Panama,161661296
-Latvia,163486522
-Jamaica,192548786
-Ghana,200963148
-Macedonia,206120774
-Luxembourg,211684790
-Zimbabwe,225935797
-Kenya,227185952
-Guatemala,265557056
-Myanmar,275989869
-Sri Lanka,282018442
-Lithuania,286761803
-Bolivia,299390370
-Mongolia,318611082
-Slovenia,334309369
-Estonia,365768478
-Bosnia and Herzegovina,379978155
-Lebanon,384474760
-Yemen,395285979
-Jordan,411250929
-Dominican Republic,422197923
-Croatia,436780791
-Angola,466883355
-Tunisia,488669039
-Bahrain,505860025
-Cuba,629401455
-Ecuador,659683451
-Azerbaijan,702505583
-New Zealand,733807386
-Trinidad and Tobago,778578387
-Slovakia,836291167
-Oman,846512632
-Hong Kong,876222624
-Ireland,894879486
-Peru,900030899
-Switzerland,905562587
-Norway,921618190
-Serbia,966914358
-Singapore,971720900
-Syria,991260724
-Morocco,1014809568
-Bulgaria,1031163240
-Bangladesh,1046197356
-Denmark,1052415876
-Libya,1063571541
-Sweden,1075382512
-Turkmenistan,1109709783
-Hungary,1154800726
-Finland,1223439239
-Portugal,1236263956
-North Korea,1281420204
-Belarus,1282383004
-Israel,1320908506
-Qatar,1415918556
-Chile,1428304257
-Colombia,1440541687
-Austria,1482583503
-Kuwait,1624863519
-Philippines,1740755807
-Nigeria,1832314386
-Romania,1962990475
-Greece,2044778984
-Vietnam,2310586771
-Algeria,2361980982
-Iraq,2399136527
-Uzbekistan,2405108668
-Belgium,2432108339
-Czech Republic,2495548723
-Pakistan,2964883930
-United Arab Emirates,2966588887
-Argentina,3568504639
-Netherlands,3610870454
-Venezuela,3613724209
-Egypt,3622085385
-Malaysia,3845691151
-Kazakhstan,4179367342
-Taiwan,5187903500
-Thailand,5251001532
-Ukraine,6153706585
-Turkey,6184894012
-Spain,6397833600
-Poland,6816104228
-Australia,8055110790
-Brazil,8114900660
-Indonesia,8221596023
-France,8367876415
-Saudi Arabia,9009248627
-Italy,9138896463
-South Africa,9159155923
-Mexico,9557620490
-Iran,10465303744
-South Korea,10636987661
-United Kingdom,10866779590
-Canada,11861126878
-Germany,17989612123
-Japan,26265738058
-India,32176774686
-Russia,33799361336
-United States,1.20705E+11
-China,1.40619E+11
+Country,Continent,Cumulative CO2 Emissions (tonnes)
+Algeria,Africa,2361980982
+Angola,Africa,466883355
+Argentina,South America,3568504639
+Australia,Oceania,8055110790
+Austria,Europe,1482583503
+Azerbaijan,Asia,702505583
+Bahrain,Asia,505860025
+Bangladesh,Asia,1046197356
+Belarus,Europe,1282383004
+Belgium,Europe,2432108339
+Bolivia,South America,299390370
+Bosnia and Herzegovina,Europe,379978155
+Brazil,South America,8114900660
+Bulgaria,Europe,1031163240
+Canada,North America,11861126878
+Chile,South America,1428304257
+China,Asia,1.41E+11
+Colombia,South America,1440541687
+Croatia,Europe,436780791
+Cuba,North America,629401455
+Czech Republic,Europe,2495548723
+Denmark,Europe,1052415876
+Dominican Republic,North America,422197923
+Ecuador,South America,659683451
+Egypt,Africa,3622085385
+Estonia,Europe,365768478
+Finland,Europe,1223439239
+France,Europe,8367876415
+Germany,Europe,17989612123
+Ghana,Africa,200963148
+Greece,Europe,2044778984
+Guatemala,North America,265557056
+Hong Kong,Asia,876222624
+Hungary,Europe,1154800726
+India,Asia,32176774686
+Indonesia,Asia,8221596023
+Iran,Asia,10465303744
+Iraq,Asia,2399136527
+Ireland,Europe,894879486
+Israel,Asia,1320908506
+Italy,Europe,9138896463
+Jamaica,North America,192548786
+Japan,Asia,26265738058
+Jordan,Asia,411250929
+Kazakhstan,Asia,4179367342
+Kenya,Africa,227185952
+Kuwait,Asia,1624863519
+Latvia,Europe,163486522
+Lebanon,Asia,384474760
+Libya,Africa,1063571541
+Lithuania,Europe,286761803
+Luxembourg,Europe,211684790
+Macedonia,Europe,206120774
+Malaysia,Asia,3845691151
+Mexico,North America,9557620490
+Mongolia,Asia,318611082
+Morocco,Africa,1014809568
+Myanmar,Asia,275989869
+Netherlands,Europe,3610870454
+New Zealand,Oceania,733807386
+Nigeria,Africa,1832314386
+North Korea,Asia,1281420204
+Norway,Europe,921618190
+Oman,Asia,846512632
+Pakistan,Asia,2964883930
+Panama,North America,161661296
+Peru,South America,900030899
+Philippines,Asia,1740755807
+Poland,Europe,6816104228
+Portugal,Europe,1236263956
+Qatar,Asia,1415918556
+Romania,Europe,1962990475
+Russia,Europe,33799361336
+Saudi Arabia,Asia,9009248627
+Serbia,Europe,966914358
+Singapore,Asia,971720900
+Slovakia,Europe,836291167
+Slovenia,Europe,334309369
+South Africa,Africa,9159155923
+South Korea,Asia,10636987661
+Spain,Europe,6397833600
+Sri Lanka,Asia,282018442
+Sweden,Europe,1075382512
+Switzerland,Europe,905562587
+Syria,Asia,991260724
+Taiwan,Asia,5187903500
+Thailand,Asia,5251001532
+Trinidad and Tobago,North America,778578387
+Tunisia,Africa,488669039
+Turkey,Asia,6184894012
+Turkmenistan,Asia,1109709783
+Ukraine,Europe,6153706585
+United Arab Emirates,Asia,2966588887
+United Kingdom,Europe,10866779590
+United States,North America,1.21E+11
+Uzbekistan,Asia,2405108668
+Venezuela,South America,3613724209
+Vietnam,Asia,2310586771
+Yemen,Asia,395285979
+Zimbabwe,Africa,225935797
