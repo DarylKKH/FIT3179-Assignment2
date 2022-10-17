@@ -1,43 +1,75 @@
-/* Text Alignment in HTML */
-#c-align {
-    text-align: center;
-}
-
-/* Alignment of choropleth map */
-#choropleth_map {
-    top: 50px;
-    bottom: 50px;
-    left: 50px;
-    right: 50px;
-}
-
-/* Alignment of bar chart */
-#bar_chart {
-    top: 50px;
-    bottom: 50px;
-    left: 50px;
-    right: 50px;
-}
-
-/* Alignment of lollipop chart */
-#lollipop_chart {
-    top: 50px;
-    bottom: 50px;
-    left: 50px;
-    right: 50px;
-}
-
-/* Alignment of bubble chart */
-#bubble_chart {
-    top: 50px;
-    bottom: 50px;
-    left: 50px;
-    right: 50px;
-}
-
 /* Section divider */
 #divider {
     margin: auto;
+    padding: 20px;
+}
+
+/* Section divider */
+#divider2 {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-align: center;
     background-color: lavender;
-    padding: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    border-style: outset;
+    border-width: 5px;
+}
+
+/* Paragraph's font size setting */
+p {
+    font-size: 20px;
+}
+
+/* Whole body tag uses this font */
+body *{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Sets the webpage with a color */
+body {
+    background-color: lavender;
+}
+
+/* Layout a page in the webpage */
+.page {
+    width: 1200px;
+    background-color: honeydew;
+    margin: auto;
+    padding: 50px;
+    padding-top: 35px;
+}
+
+/* Sets the visualisation container's width */
+.vis-container {
+    width: 100%;
+}
+
+/* Descriptions are left-aligned */
+.description-left {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+/* Pure CSS */
+.pure-g {
+    margin-bottom: 40px;
+}
+
+/* End */
+.end {
+    margin-top: 5px;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: x-large;
 }
