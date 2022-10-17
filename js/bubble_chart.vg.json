@@ -1,102 +1,129 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
-    "height": 600,
+    "title": "CO2 Emissions per Country",
+    "width": 630,
+    "height": 350,
+
     "data": {
       "url": "https://raw.githubusercontent.com/DarylKKH/FIT3179-Assignment2/main/data/CO2%20and%20Population.csv"
     },
+
     "params": [
       {
         "name": "Continent_selection",
-        "bind": {
+        "bind": 
+        {
           "input": "select",
           "options": [
             null,
-            "North America",
-            "South America",
-            "Europe",
             "Africa",
             "Asia",
-            "Oceania"
+            "Europe",
+            "North America",
+            "Oceania",
+            "South America"
           ],
           "labels": [
             "Show All",
-            "North America",
-            "South America",
-            "Europe",
             "Africa",
             "Asia",
-            "Oceania"
+            "Europe",
+            "North America",
+            "Oceania",
+            "South America"
           ],
           "name": "Continent Selection: "
         }
-      }
-    ],
-    "transform": [
+      },
       {
-        "filter": "Continent_selection == null || datum.Continent == Continent_selection"
+        "name": "population_above",
+        "value": 0,
+        "bind": 
+        {
+          "input": "range",
+          "min": 0,
+          "max": 1000000,
+          "step": 500,
+          "name": "Population: "
+        }
       }
     ],
+
+    "transform": [
+      { "filter": "Continent_selection == null || datum.Continent == Continent_selection" },
+      { "filter": "datum.Population > population_above" }
+    ],
+
     "encoding": {
-      "x": {
+      "x": 
+      {
         "field": "Population",
         "type": "quantitative",
         "title": "Population",
-        "axis": {"tickCount": 7}
+        "axis": { "tickCount": 6 },
+        "scale": { "type": "log", "domain": [1, 2000000] }
       },
-      "y": {
-        "field": "CO2  Emission (metric ton)",
+      "y": 
+      {
+        "field": "CO2 Emissions (metric ton)",
         "type": "quantitative",
-        "title": "CO2  Emission (metric ton)",
-        "axis": {"tickCount": 6}
+        "title": "CO2 Emissions (metric ton)",
+        "axis": { "tickCount": 5 },
+        "scale": { "type": "log", "domain": [0.01, 20000] }
       }
     },
+
     "layer": [
       {
         "mark": "circle",
-        "encoding": {
-          "size": {
+        "encoding": 
+        {
+          "size": 
+          {
             "field": "Population",
             "type": "quantitative",
-            "scale": {
+            "scale": 
+            {
               "type": "threshold",
-              "domain": [10000, 100000, 1000000, 1000000],
-              "range": [10, 50, 150, 200, 300, 400]
+              "domain": [1000, 5000, 50000, 100000, 500000],
+              "range": [20, 50, 100, 200, 350, 600]
             },
-            "legend": {"format": ".1s"}
+            "legend": { "format": ".1s" }
           },
-          "color": {
+          "color": 
+          {
             "field": "Continent",
             "type": "nominal",
-            "scale": {
+            "scale": 
+            {
               "domain": [
-                "North America",
-                "South America",
-                "Europe",
                 "Africa",
                 "Asia",
-                "Oceania"
+                "Europe",
+                "North America",
+                "Oceania",
+                "South America"
               ],
               "range": [
                 "#e41a1c",
-                "#984ea3",
                 "#ff7f00",
-                "#a6cee3",
                 "#377eb8",
-                "#a65628"
+                "#984ea3",
+                "#4daf4a",
+                "#de77ae"
               ]
             }
           },
-          "opacity": {"value": 0.6},
+          "opacity": { "value": 0.8 },
           "tooltip": [
-            {"field": "Country", "type": "nominal"},
+            { "field": "Country", "type": "nominal" },
             {
               "field": "Population",
               "type": "quantitative",
               "format": ","
             },
             {
-              "field": "CO2  Emission (metric ton)",
+              "field": "CO2 Emissions (metric ton)",
               "type": "quantitative",
               "format": ","
             }
@@ -104,7 +131,8 @@
         }
       },
       {
-        "mark": {
+        "mark": 
+        {
           "type": "text",
           "align": "right",
           "baseline": "middle",
@@ -112,28 +140,23 @@
           "fontSize": 11.5,
           "fontStyle": "italic"
         },
-        "encoding": {
-          "text": {"field": "Country", "type": "nominal"},
-          "color": {"value": "black"},
-          "opacity": {
-            "condition": {
-              "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'Yemen' ||  datum['Country'] == 'United States'",
+        "encoding": 
+        {
+          "text": { "field": "Country", "type": "nominal" },
+          "color": { "value": "black" },
+          "opacity": 
+          {
+            "condition": 
+            {
+              "test": "datum['Country'] == 'Seychelles' || datum['Country'] == 'Nigeria' || datum['Country'] == 'Singapore' || datum['Country'] == 'India' || datum['Country'] == 'China' || datum['Country'] == 'India' ||  datum['Country'] == 'Russia' ||  datum['Country'] == 'Iceland' ||  datum['Country'] == 'United States' ||  datum['Country'] == 'Belize' ||  datum['Country'] == 'Australia' ||  datum['Country'] == 'New Zealand' ||  datum['Country'] == 'Brazil' ||  datum['Country'] == 'Colombia'",
               "value": 1
             },
             "value": 0
           },
           "tooltip": [
-            {"field": "Country", "type": "nominal"},
-            {
-              "field": "Population",
-              "type": "quantitative",
-              "format": ","
-            },
-            {
-              "field": "CO2  Emission (metric ton)",
-              "type": "quantitative",
-              "format": ","
-            }
+            { "field": "Country", "type": "nominal" },
+            { "field": "Population", "type": "quantitative", "format": "," },
+            { "field": "CO2 Emissions (metric ton)", "type": "quantitative", "format": ".2f" }
           ]
         }
       }

@@ -1,0 +1,99 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Top 100 countries with the Most CO2 Emission Production (1997-2017)",
+    "width": 555,
+    "height": 900,
+
+    "data": {
+      "url": "https://raw.githubusercontent.com/DarylKKH/FIT3179-Assignment2/main/data/Cumulative%20CO2%20Emissions%20of%20Top%20100%20Countries.csv"
+    },
+    
+    "params": [
+      {
+        "name": "continent_selection",
+        "bind": 
+        {
+          "input": "select",
+          "options": [
+            null,
+            "Africa",
+            "Asia",
+            "Europe",
+            "North America",
+            "Oceania",
+            "South America"
+          ],
+          "labels": [
+            "Show All",
+            "Africa",
+            "Asia",
+            "Europe",
+            "North America",
+            "Oceania",
+            "South America"
+          ],
+          "name": "Continent Selection: "
+        }
+      },
+      {
+        "name": "continent_highlight",
+        "select": { "type": "point", "fields": ["Continent"] },
+        "bind": "legend"
+      }
+    ],
+
+    "transform": [
+      { "filter": "continent_selection == null || datum.Continent == continent_selection" }
+    ],
+
+    "mark": "bar",
+    "encoding": 
+    {
+      "x": 
+      {
+        "field": "Cumulative CO2 Emissions (tonnes)",
+        "type": "quantitative",
+        "scale": {"type": "sqrt"}
+      },
+      "y": 
+      {
+        "field": "Country", 
+        "type": "nominal",
+        "sort": "-x"
+      },
+      "color": 
+      {
+        "field": "Continent",
+        "type": "nominal",
+        "scale": 
+        {
+          "domain": [
+            "Africa",
+            "Asia",
+            "Europe",
+            "North America",
+            "Oceania",
+            "South America"
+          ],
+          "range": [
+            "#e41a1c",
+            "#ff7f00",
+            "#377eb8",
+            "#984ea3",
+            "#4daf4a",
+            "#de77ae"
+          ]
+        }
+      },
+      "opacity": 
+      {
+        "condition": { "param": "continent_highlight", "value": 0.8 },
+        "value": 0.2
+      },
+      "tooltip": [
+        { "field": "Country", "type": "nominal" },
+        { "field": "Continent", "type": "nominal" },
+        { "field": "Cumulative CO2 Emissions (tonnes)", "type": "quantitative", "format": "," }
+      ]
+    }
+  }

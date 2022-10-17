@@ -1,0 +1,87 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Top 10 Countries for CO2 Emissions Production (2008-2017)",
+    "width": 660,
+    "height": 350,
+
+    "data": {
+      "url": "https://raw.githubusercontent.com/DarylKKH/FIT3179-Assignment2/main/data/Top%2010%20Countries%20for%20CO2%20Emissions.csv"
+    },
+
+    "params": [
+        {
+            "name": "top_n_countries",
+            "value": 5,
+            "bind": { "input": "range", "min": 1, "max": 10, "step": 1, "name": "Ranking Display: " }
+        }
+    ],
+
+    "transform": [
+        {
+            "sort": [{ "field": "Annual CO2 Emissions", "order": "descending" }],
+            "window": [{ "op": "rank", "as": "rank" }],
+            "groupby": ["Year"]
+        },
+        { "filter": "datum.rank <= top_n_countries" }
+    ],
+
+    "encoding": {
+        "x": 
+        {
+            "field": "Year",
+            "type": "ordinal",
+            "axis": { "labelAngle": 0 },
+            "title": "Year"
+        },
+        "y": 
+        {
+            "field": "rank",
+            "type": "quantitative",
+            "sort": "descending",
+            "scale": { "domain": [0.5, {"expr": "top_n_countries + 0.5"}] },
+            "axis": { "labelAngle": 0, "tickMinStep": 1, "tickCount": {"expr": "top_n_countries"} },
+            "title": "Ranking"
+        }
+    },
+
+    "layer": [
+        {
+            "mark": { "type": "line", "interpolate": "linear" },
+            "encoding": 
+            {
+                "tooltip": [
+                    { "field": "Country" },
+                    { "field": "rank", "title": "Rank" }
+                ],
+                "color": { "field": "Country" },
+                "size": {
+                    "condition": { "param": "country_selection", "empty": false, "value": 5 },
+                    "value": 3
+                }
+            }
+        },
+        {
+            "params": [
+                {
+                    "name": "country_selection",
+                    "select": { "type": "point", "on": "click", "fields": ["Country"] },
+                    "bind": "legend"
+                }
+            ],
+            "mark": { "type": "circle", "thickness": 5 },
+            "encoding": 
+            {
+                "tooltip": [
+                    { "field": "Country" },
+                    { "field": "rank", "title": "Rank" }
+                ],
+                "color": 
+                {
+                    "condition": { "param": "country_selection", "empty": false, "value": "black" },
+                    "field": "Country"
+                },
+                "size": { "value": 500 }
+            }
+        }
+    ]
+  }
