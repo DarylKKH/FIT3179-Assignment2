@@ -8,82 +8,193 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
+    <!-- Import pure.css -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- CSS file -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
     <!-- Title for the web page -->
     <title>FIT3179 Assignment 2</title>
 
 </head>
 
-<body style="background-color:honeydew;">
 
-    <h1 id="c-align">CO2 Emissions Around the World</h1>
 
-    <div id="c-align">
-        <div id="choropleth_map"></div>
-        <p>-</p>
-        <p>The choropleth map above displays the <strong>CO2 EMISSIONS AROUND THE WORLD</strong>.</p>
-        <p>Data for several countries are not available, hence, it's area is highlighted <b>grey</b>.</p>
-        <p>Based on the map, we can draw that <strong>MAJORITY</strong> of the countries produce less than 
-            <strong>10,000 KG</strong> of CO2 Emission in the year <strong>2019</strong>.</p>
-    </div>
+<body>
 
-    <div id="divider"></div>
+    <div class="page">
 
-    <div id="c-align">
-        <div id="bar_chart"></div>
-        <p>-</p>
-        <p>The bar chart shown above represents the CO2 emissions from China and United States between the year
-            <strong>2008</strong> and <strong>2017</strong>.</p>
-        <p>A filter is available to choose either a country of preference or both.</p>
-        <p>In year <strong>2014</strong>, China and United States produced more than <strong>14 BILLION</strong> CO2 emissions, 
-            indicating the highest amount among the 10 years.</p>
-    </div>
+        <!-- pure grid group -->
+        <div class="pure-g">
+          <div class="pure-u-1-1">
+            <div class="header">
+                <h1>CO2 Emissions Around the World</h1>
+            </div>
+          </div>
+        </div>
+        <!-- end pure grid group -->
 
-    <div id="divider"></div>
+        <div id="divider"></div>
+    
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-3">
+              <div class="description-left">
+                <div id="divider2"></div>
+                <p>Based on the choropleth map, <strong>Canada, China</strong> and <strong>Australia</strong> 
+                    are of the few countries that produced more than <b>7,500KG</b> of CO2 emissions in 2019. 
+                    Another observation is that in <strong>Africa</strong>, about half of the countries produced 
+                    less than <b>600KG</b>.
+                </p>
+                <div id="divider2"></div>
+              </div>
+            </div>
+            <div class="pure-u-1-2">
+              <div class="vis-container">
+                  <div id="choropleth_map"></div>
+              </div>
+            </div>
+          </div>
+        <!-- end pure grid group -->
 
-    <div id="c-align">
-        <div id="lollipop_chart"></div>
-        <p>-</p>
-        <p>The bar chart portrays the <strong>TOP 100</strong> countries with the <strong>HIGHEST</strong> cumulative amount of CO2 emissions.</p>
-        <p><b>CHINA</b> produced the most CO2 emissions, valueing up to <strong>140 BILLION</strong>, whereas 
-            <b>PANAMA</b> produced the least CO2 emissions, which is around <strong>160 MILLION</strong>.</p>
-    </div>
+        <div id="divider"></div>
+    
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-3">
+              <div class="description-left">
+                <div id="divider2"></div>
+                <p><strong>China</strong> and <strong>Germany</strong> are always at the <b>top</b> of the chart in
+                    terms of producing the most CO2 emissions <b>annually</b>. On the other hand, <strong>Japan</strong>
+                    is always at the bottom of the chart, which is <b>rank 10</b>. This shows that Japan does not 
+                    produce as much CO2 emissions as the other countries.
+                </p>
+                <div id="divider2"></div>
+              </div>
+            </div>
+            <div class="pure-u-1-2">
+              <div class="vis-container">
+                  <div id="bump_chart"></div>
+              </div>
+            </div>
+          </div>
+        <!-- end pure grid group -->
 
-    <div id="divider"></div>
+        <div id="divider"></div>
+    
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-3">
+              <div class="description-left">
+                <div id="divider2"></div>
+                <p>The bubble chart has a <strong>highly positive correlation</strong>. An observation can be
+                    drawn from the chart, which is, as the <b>population</b> of a country <strong>increases</strong>, 
+                    the <b>production of CO2 emissions</b> also <strong>increases</strong>.
+                </p>
+                <div id="divider2"></div>
+              </div>
+            </div>
+            <div class="pure-u-1-2">
+              <div class="vis-container">
+                  <div id="bubble_chart"></div>
+              </div>
+            </div>
+          </div>
+        <!-- end pure grid group -->
 
-    <div id="c-align">
-        <div id="bubble_chart"></div>
-        <p>-</p>
-        <p>The bubble chart showns the relationship between <strong>CO2 EMISSIONS</strong> and the <strong>COUNTRY'S POPULATION</strong>.</p>
-        <p>It can be seen that as the <strong>POPULATION</strong> of a country <strong>INCREASES</strong>, 
-            the <strong>CO2 EMISSION</strong> also <strong>INCREASES</strong>.</p>
-    </div>
+        <div id="divider"></div>
+    
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-3">
+              <div class="description-left">
+                <div id="divider2"></div>
+                <p>The <b>cumulative</b> production of CO2 emissions of <b>100 countries</b> over the range of 
+                    <b>20 years</b> is shown in the horizontal bar chart. As always, <strong>China</strong> 
+                    produced the most, totalling up to <strong>141 billion</strong>! In contrast, 
+                    <strong>Panama</strong>, a country in the <strong>North America continent</strong> only 
+                    produced <strong>160 million</strong>.
+                </p>
+                <div id="divider2"></div>
+              </div>
+            </div>
+            <div class="pure-u-1-2">
+              <div class="vis-container">
+                  <div id="hori_bar_chart"></div>
+              </div>
+            </div>
+          </div>
+        <!-- end pure grid group -->
+
+        <div id="divider"></div>
+    
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-3">
+              <div class="description-left">
+                <div id="divider2"></div>
+                <p>In <b>2014</b>, the total CO2 emissions produced by <strong>China</strong> and 
+                    <strong>United States</strong> was around <strong>15 billion</strong>, indicating the highest
+                    amount compared to other years. Furthermore, China's production of CO2 emissions have been
+                    <b>increasing</b> over the years, whereas for United States, it is slightly <b>decreasing</b>
+                    for some years.
+                </p>
+                <div id="divider2"></div>
+              </div>
+            </div>
+            <div class="pure-u-1-2">
+              <div class="vis-container">
+                  <div id="stacked_bar_chart"></div>
+              </div>
+            </div>
+          </div>
+        <!-- end pure grid group -->
+
+        <div class="end">
+            <h6>FIT3179 Assignment 2 by Daryl Khoo</h6>
+        </div>
+        
+    </div> <!-- end page -->
+
+
 
     <script>
 
-        var chart_1 = "js/empty_data_map.vg.json";
+        var chart_1 = "js/choropleth_map.vg.json";
 
-        vegaEmbed("#choropleth_map", chart_1).then(function(result){
+        vegaEmbed("#choropleth_map", chart_1, {"actions": false}).then(function(result){
             // Access the Vega view instance
         }).catch(console.error);
 
-        var chart_2 = "js/bar_chart.vg.json";
+        var chart_2 = "js/stacked_bar_chart.vg.json";
 
-        vegaEmbed("#bar_chart", chart_2).then(function(result){
+        vegaEmbed("#stacked_bar_chart", chart_2, {"actions": false}).then(function(result){
             // Access the Vega view instance
         }).catch(console.error);
 
-        var chart_3 = "js/lollipop_chart.vg.json";
+        var chart_3 = "js/hori_bar_chart.vg.json";
 
-        vegaEmbed("#lollipop_chart", chart_3).then(function(result){
+        vegaEmbed("#hori_bar_chart", chart_3, {"actions": false}).then(function(result){
             // Access the Vega view instance
         }).catch(console.error);
 
         var chart_4 = "js/bubble_chart.vg.json";
 
-        vegaEmbed("#bubble_chart", chart_4).then(function(result){
+        vegaEmbed("#bubble_chart", chart_4, {"actions": false}).then(function(result){
+            // Access the Vega view instance
+        }).catch(console.error);
+
+        var chart_5 = "js/bump_chart.vg.json";
+
+        vegaEmbed("#bump_chart", chart_5, {"actions": false}).then(function(result){
             // Access the Vega view instance
         }).catch(console.error);
 
